@@ -1,2 +1,2 @@
-var a = 1;
+var king = 10;
 console.log(a);
