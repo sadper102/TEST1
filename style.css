@@ -60,10 +60,11 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: #202A35;
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
+    border-right: 2px solid white;
 }
 
 #sidebar.active {
@@ -73,12 +74,13 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #203962;
+    border-bottom: 1px solid white;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid white;
 }
 
 #sidebar ul p {
@@ -92,13 +94,13 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+   color: #fff;
+    background: #4473C5;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #4473C5;
 }
 
 
@@ -223,6 +225,27 @@ a.article, a.article:hover {
     }
 
 }
-.form-control{
-    max-width: 300px;
+.input-group{
+    width: 80%;
+}
+p{
+    color: white;
+}
+.table-striped{
+    color: white;
+    visibility: visible;
+    white-space: nowrap;
+}
+.table-striped>tbody{
+    color:black;
+}
+.table-striped>thead{
+    background-color:#4473C5 ;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #CFD5EB;
+ }
+.table-striped > tbody > :nth-child(even) {
+    background-color: #E9EDF6;
 }
